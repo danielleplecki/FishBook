@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">FishBook</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="subject">Subject</string>
+    <string name="your_post">Your Post</string>
+    <string name="post_button">Create Post</string>
+    <string name="subject_hint"><i>What\'s your post about?</i></string>
+    <string name="content_hint"><i>What are you catching here?</i></string>
+    <string name="sample_content">There are a lot of massive Jacks under the bridge at Tin City, I\'ve been using 3/4 ounce Kastmasters and they\'re eating them up.</string>
+    <string name="sample_subject">Jack in Tin City</string>
+    <string name="sample_date">25/08/16 11:23</string>
+    <string name="sample_distance">7.3 mi</string>
+    <string name="set_custom_location">Use Custom Location</string>
+    <string name="custom_location_hint"><i>Enter City, State</i></string>
+    <string name="set_location">Set Location</string>
+    <string name="custom_location_button">Set Custom Location</string>
+    <string name="current_location_button">Use Current Location</string>
+    <string name="or">-or-</string>
+    <string name="_5_miles">5 miles</string>
+    <string name="_10_miles">10 miles</string>
+    <string name="_20_miles">20 miles</string>
+    <string name="_50_miles">50 miles</string>
+    <string name="_100_miles">100 miles</string>
+    <string name="sort_by">Sort By</string>
+    <string name="distance">Distance</string>
+    <string name="most_recent">Most Recent</string>
+    <string name="new_post">New Post</string>
+    <string name="select_radius">Select Radius</string>
+</resources>
