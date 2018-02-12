@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_post"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.fishbook.NewPostActivity">
+
+    <TextView
+        android:text="@string/subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/subjectLabel_textView"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="30"
+        android:id="@+id/subject_editText"
+        android:layout_below="@+id/subjectLabel_textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:drawable/editbox_background"
+        android:paddingTop="5dp"
+        android:cursorVisible="true"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:hint="@string/subject_hint"
+        android:textColorHint="@color/grey"/>
+
+    <TextView
+        android:text="@string/your_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subject_editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/content_textView"
+        android:paddingTop="15dp"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="30"
+        android:layout_below="@+id/content_textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/content_editText"
+        android:background="@android:drawable/editbox_background"
+        android:paddingTop="5dp"
+        android:cursorVisible="true"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:hint="@string/content_hint"
+        android:textColorHint="@color/grey"
+        />
+
+    <Button
+        android:text="@string/post_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content_editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:id="@+id/createPost_button" />
+
+    <Button
+        android:id="@+id/help_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_help_outline_white_18dp"
+        android:visibility="visible"
+        android:minHeight="4dp"
+        android:minWidth="4dp"
+        android:scaleY=".8"
+        android:backgroundTint="@color/blue"
+        android:scaleX=".8"
+        android:layout_below="@id/subject_editText"
+        android:layout_toRightOf="@+id/content_textView"
+        android:layout_marginTop="7dp" />
+
+    <RelativeLayout
+        android:id="@+id/popUp_View"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="380dp"
+        android:layout_marginEnd="40dp"
+        android:elevation="24dp">
+
+        <TextView
+            android:id="@+id/sampleSubject_textView"
+            android:text="@string/sample_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorBackgroundFloating"
+            android:textStyle="normal|bold"
+            android:textSize="24sp"
+            android:paddingTop="12dp"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/sampleDate_textView"
+            android:text="@string/sample_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sampleSubject_textView"
+            android:paddingLeft="10dp"
+            android:textColor="?attr/colorBackgroundFloating"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/sampleContent_textView"
+            android:text="@string/sample_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sampleDate_textView"
+            android:textColor="?attr/colorBackgroundFloating"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/exitSample_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_close_light"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="?attr/colorBackgroundFloating"
+            android:minHeight="31dp"
+            android:minWidth="30dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
