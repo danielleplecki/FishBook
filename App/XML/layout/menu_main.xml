@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_setLocation"
+        android:title="@string/set_location">
+    </item>
+
+    <item
+        android:id="@+id/action_selectRadius"
+        android:title="@string/select_radius"
+        >
+    <menu>
+        <item
+            android:id="@+id/action_5miles"
+            android:title="@string/_5_miles" />
+        <item
+            android:id="@+id/action_10miles"
+            android:title="@string/_10_miles" />
+        <item
+            android:id="@+id/action_20miles"
+            android:title="@string/_20_miles" />
+        <item
+            android:id="@+id/action_50miles"
+            android:title="@string/_50_miles" />
+        <item
+            android:id="@+id/action_100miles"
+            android:title="@string/_100_miles" />
+
+    </menu>
+        </item>
+
+    <item
+        android:id="@+id/action_sortBy"
+        android:title="@string/sort_by"
+        >
+        <menu>
+            <item
+                android:id="@+id/action_distance"
+                android:title="@string/distance" />
+            <item
+                android:id="@+id/action_mostRecent"
+                android:title="@string/most_recent" />
+
+        </menu>
+    </item>
+
+
+    <item
+    android:title="@string/new_post"
+        android:id="@+id/action_newPost"
+        android:icon="@android:drawable/ic_input_add"
+        app:showAsAction="ifRoom">
+    </item>
+</menu>
